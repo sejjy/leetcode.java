@@ -13,7 +13,7 @@
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
-public class TwoSum {
+public class _0001_TwoSum {
 
 	public int[] twoSum(int[] nums, int target) {
 		int[] output = new int[2];
@@ -27,5 +27,15 @@ public class TwoSum {
 				}
 
 		return output;
+	}
+
+	public static void main(String[] args) {
+		_0001_TwoSum solution = new _0001_TwoSum();
+
+		int[] nums = { 2, 7, 11, 15 };
+		int target = 9;
+		int[] result = solution.twoSum(nums, target);
+
+		System.out.println("[" + result[0] + "," + result[1] + "]");
 	}
 }
