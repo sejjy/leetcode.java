@@ -39,11 +39,11 @@ public class _0013_RomanToInteger {
 				'C', 100,
 				'D', 500,
 				'M', 1000);
-
 		int output = 0;
+		int current, i;
 
-		for (int i = 0; i < s.length(); i++) {
-			int current = values.get(s.charAt(i));
+		for (i = 0; i < s.length(); i++) {
+			current = values.get(s.charAt(i));
 
 			if (i + 1 < s.length() && current < values.get(s.charAt(i + 1))) {
 				output -= current;

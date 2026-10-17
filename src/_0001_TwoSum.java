@@ -11,9 +11,10 @@ public class _0001_TwoSum {
 	public int[] twoSum(int[] nums, int target) {
 		int[] output = new int[2];
 		int length = nums.length;
+		int i, j;
 
-		for (int i = 0; i < length; i++) {
-			for (int j = i + 1; j < length; j++) {
+		for (i = 0; i < length; i++) {
+			for (j = i + 1; j < length; j++) {
 				if (nums[i] + nums[j] == target) {
 					output[0] = i;
 					output[1] = j;
