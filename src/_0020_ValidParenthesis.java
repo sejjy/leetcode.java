@@ -18,18 +18,15 @@ class _0020_ValidParenthesis {
 				'}', '{',
 				']', '[');
 		Stack<Character> stack = new Stack<>();
-		char ch;
-		int i;
 
-		for (i = 0; i < s.length(); i++) {
-			ch = s.charAt(i);
+		for (int i = 0; i < s.length(); i++) {
+			char ch = s.charAt(i);
 
-			if (brackets.containsValue(ch)) {
+			if (brackets.containsValue(ch))
 				stack.push(ch);
-			} else {
-				if (stack.isEmpty() || stack.pop() != brackets.get(ch)) {
+			else {
+				if (stack.isEmpty() || stack.pop() != brackets.get(ch))
 					return false;
-				}
 			}
 		}
 
