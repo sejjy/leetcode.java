@@ -11,4 +11,12 @@ public class _0028_FindTheIndexOfTheFirstOccurrenceInAString {
 
 		return -1;
 	}
+
+	public static void main(String[] args) {
+		_0028_FindTheIndexOfTheFirstOccurrenceInAString solution =
+			new _0028_FindTheIndexOfTheFirstOccurrenceInAString();
+
+		System.out.println(solution.strStr("sadbutsad", "sad"));  // 0
+		System.out.println(solution.strStr("leetcode", "leeto")); // -1
+	}
 }

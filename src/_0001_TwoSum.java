@@ -6,6 +6,8 @@
 //
 // You can return the answer in any order.
 
+import java.util.Arrays;
+
 public class _0001_TwoSum {
 
 	public int[] twoSum(int[] nums, int target) {
@@ -17,10 +19,25 @@ public class _0001_TwoSum {
 				if (nums[i] + nums[j] == target) {
 					output[0] = i;
 					output[1] = j;
+					return output;
 				}
 			}
 		}
 
 		return output;
+	}
+
+	public static void main(String[] args) {
+		_0001_TwoSum solution = new _0001_TwoSum();
+
+		// [0, 1]
+		System.out.println(Arrays.toString(
+			solution.twoSum(new int[] { 2, 7, 11, 15 }, 9)));
+		// [1, 2]
+		System.out.println(Arrays.toString(
+			solution.twoSum(new int[] { 3, 2, 4 }, 6)));
+		// [0, 1]
+		System.out.println(Arrays.toString(
+			solution.twoSum(new int[] { 3, 3 }, 6)));
 	}
 }

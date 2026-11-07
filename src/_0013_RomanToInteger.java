@@ -52,4 +52,12 @@ public class _0013_RomanToInteger {
 
 		return output;
 	}
+
+	public static void main(String[] args) {
+		_0013_RomanToInteger solution = new _0013_RomanToInteger();
+
+		System.out.println(solution.romanToInt("III"));     // 3
+		System.out.println(solution.romanToInt("LVIII"));   // 58
+		System.out.println(solution.romanToInt("MCMXCIV")); // 1994
+	}
 }

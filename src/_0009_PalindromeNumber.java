@@ -12,4 +12,12 @@ public class _0009_PalindromeNumber {
 
 		return true;
 	}
+
+	public static void main(String[] args) {
+		_0009_PalindromeNumber solution = new _0009_PalindromeNumber();
+
+		System.out.println(solution.isPalindrome(121));  // true
+		System.out.println(solution.isPalindrome(-121)); // false
+		System.out.println(solution.isPalindrome(10));   // false
+	}
 }

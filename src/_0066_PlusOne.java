@@ -5,6 +5,8 @@
 //
 // Increment the large integer by one and return the resulting array of digits.
 
+import java.util.Arrays;
+
 public class _0066_PlusOne {
 
 	public int[] plusOne(int[] digits) {
@@ -24,5 +26,19 @@ public class _0066_PlusOne {
 		output[0] = 1;
 
 		return output;
+	}
+
+	public static void main(String[] args) {
+		_0066_PlusOne solution = new _0066_PlusOne();
+
+		// [1, 2, 4]
+		System.out.println(Arrays.toString(
+			solution.plusOne(new int[] { 1, 2, 3 })));
+		// [4, 3, 2, 2]
+		System.out.println(Arrays.toString(
+			solution.plusOne(new int[] { 4, 3, 2, 1 })));
+		// [1, 0]
+		System.out.println(Arrays.toString(
+			solution.plusOne(new int[] { 9 })));
 	}
 }

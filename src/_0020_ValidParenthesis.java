@@ -32,4 +32,14 @@ class _0020_ValidParenthesis {
 
 		return stack.isEmpty();
 	}
+
+	public static void main(String[] args) {
+		_0020_ValidParenthesis solution = new _0020_ValidParenthesis();
+
+		System.out.println(solution.isValid("()"));     // true
+		System.out.println(solution.isValid("()[]{}")); // true
+		System.out.println(solution.isValid("(]"));     // false
+		System.out.println(solution.isValid("([])"));   // true
+		System.out.println(solution.isValid("([)]"));   // false
+	}
 }

@@ -20,4 +20,16 @@ public class _0058_LengthOfLastWord {
 
 		return len;
 	}
+
+	public static void main(String[] args) {
+		_0058_LengthOfLastWord solution = new _0058_LengthOfLastWord();
+
+		// 5
+		System.out.println(solution.lengthOfLastWord("Hello World"));
+		// 4
+		System.out.println(
+			solution.lengthOfLastWord("   fly me   to   the moon  "));
+		// 6
+		System.out.println(solution.lengthOfLastWord("luffy is still joyboy"));
+	}
 }
